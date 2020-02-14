@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RedViewController: UIViewController {
+class RedViewController: NumberedViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,15 +16,11 @@ class RedViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //unwind segue
+    //1: create IBAction with UIStoryBoardSegue as parameter in view controller that you want to unwind to
+    //2: Control-drag from unwind button to exit button on storyboard
+    //3: Select unwind method
+    @IBAction func unwindToRed(_ sender: UIStoryboardSegue) {
     }
-    */
 
 }
